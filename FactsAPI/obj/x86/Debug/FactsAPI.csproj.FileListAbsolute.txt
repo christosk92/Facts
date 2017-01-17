@@ -1,0 +1,17 @@
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\bin\x86\Debug\FactsAPI.dll
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\bin\x86\Debug\FactsAPI.pdb
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\bin\x86\Debug\FactsAPI.pri
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\FactsAPI.csprojResolveAssemblyReference.cache
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\FactsAPI.dll
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\FactsAPI.pdb
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\priconfig.xml
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\layout.resfiles
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\resources.resfiles
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\pri.resfiles
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\qualifiers.txt
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

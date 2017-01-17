@@ -1,0 +1,2 @@
+C:\Users\mypro\Desktop\git\Facts\Facts\Facts.csproj;x86
+C:\Users\mypro\Desktop\git\Facts\FactsAPI\FactsAPI.csproj;x86
