@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-14T17:27:55.809</Modified>
+      <Modified>2017-01-19T22:42:55.081</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Facts.exe">
       <PackagePath>entrypoint\Facts.exe</PackagePath>
-      <Modified>2017-01-14T17:27:52.106</Modified>
+      <Modified>2017-01-19T22:42:53.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Caliburn.Micro\3.0.3\lib\uap10.0\Caliburn.Micro.Platform.Core.dll">
       <PackagePath>Caliburn.Micro.Platform.Core.dll</PackagePath>
@@ -560,7 +560,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Facts.xr.xml">
       <PackagePath>Facts.xr.xml</PackagePath>
-      <Modified>2017-01-14T17:27:51.752</Modified>
+      <Modified>2017-01-19T22:42:53.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -573,11 +573,11 @@
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-14T17:27:54.853</Modified>
+      <Modified>2017-01-19T22:42:54.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Core\Facts.exe">
       <PackagePath>Facts.exe</PackagePath>
-      <Modified>2017-01-14T17:27:55.795</Modified>
+      <Modified>2017-01-19T22:42:55.077</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -8,8 +8,39 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel Height="50" Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-            <TextBlock x:ConnectionId='2'                                      VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center"/>
+        <Grid.Transitions>
+            <TransitionCollection>
+                <ReorderThemeTransition/>
+            </TransitionCollection>
+        </Grid.Transitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="243*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <StackPanel  Margin="10,0" HorizontalAlignment="Stretch">
+            <TextBlock x:ConnectionId='4'                                      VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center"/>
+            <MenuFlyoutSeparator Margin="5"/>
+            <TextBlock x:ConnectionId='5'                                        VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Grid Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="129*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Background="Purple" Width="90" Height="100">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:ConnectionId='2'                                         Foreground="White" Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:ConnectionId='3' Grid.Row="1" Foreground="White"                                      HorizontalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <MenuFlyoutSeparator/>
         </StackPanel>
     </Grid>
 </Page>
