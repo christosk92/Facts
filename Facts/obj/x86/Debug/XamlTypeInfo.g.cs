@@ -156,7 +156,7 @@ namespace Facts.Facts_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[19];
+            _typeNameTable = new string[22];
             _typeNameTable[0] = "Facts.Views.datefact";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -176,8 +176,11 @@ namespace Facts.Facts_XamlTypeInfo
             _typeNameTable[16] = "Facts.Views.MainPage";
             _typeNameTable[17] = "Facts.ViewModels.MainPageViewModel";
             _typeNameTable[18] = "Caliburn.Micro.PropertyChangedBase";
+            _typeNameTable[19] = "Facts.Views.NumericTextBoxBehavior";
+            _typeNameTable[20] = "Boolean";
+            _typeNameTable[21] = "Facts.Views.mathFacct";
 
-            _typeTable = new global::System.Type[19];
+            _typeTable = new global::System.Type[22];
             _typeTable[0] = typeof(global::Facts.Views.datefact);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -197,6 +200,9 @@ namespace Facts.Facts_XamlTypeInfo
             _typeTable[16] = typeof(global::Facts.Views.MainPage);
             _typeTable[17] = typeof(global::Facts.ViewModels.MainPageViewModel);
             _typeTable[18] = typeof(global::Caliburn.Micro.PropertyChangedBase);
+            _typeTable[19] = typeof(global::Facts.Views.NumericTextBoxBehavior);
+            _typeTable[20] = typeof(global::System.Boolean);
+            _typeTable[21] = typeof(global::Facts.Views.mathFacct);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -240,6 +246,8 @@ namespace Facts.Facts_XamlTypeInfo
         private object Activate_16_MainPage() { return new global::Facts.Views.MainPage(); }
         private object Activate_17_MainPageViewModel() { return new global::Facts.ViewModels.MainPageViewModel(); }
         private object Activate_18_PropertyChangedBase() { return new global::Caliburn.Micro.PropertyChangedBase(); }
+        private object Activate_19_NumericTextBoxBehavior() { return new global::Facts.Views.NumericTextBoxBehavior(); }
+        private object Activate_21_mathFacct() { return new global::Facts.Views.mathFacct(); }
         private void VectorAdd_6_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
@@ -376,6 +384,26 @@ namespace Facts.Facts_XamlTypeInfo
             case 18:   //  Caliburn.Micro.PropertyChangedBase
                 userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_18_PropertyChangedBase;
+                xamlType = userType;
+                break;
+
+            case 19:   //  Facts.Views.NumericTextBoxBehavior
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_19_NumericTextBoxBehavior;
+                userType.AddMemberName("AllowDecimal");
+                userType.AddMemberName("AssociatedObject");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  Boolean
+                xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 21:   //  Facts.Views.mathFacct
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_21_mathFacct;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
             }
@@ -537,6 +565,21 @@ namespace Facts.Facts_XamlTypeInfo
             var that = (global::Facts.Views.MainPage)instance;
             that.ViewModel = (global::Facts.ViewModels.MainPageViewModel)Value;
         }
+        private object get_11_NumericTextBoxBehavior_AllowDecimal(object instance)
+        {
+            var that = (global::Facts.Views.NumericTextBoxBehavior)instance;
+            return that.AllowDecimal;
+        }
+        private void set_11_NumericTextBoxBehavior_AllowDecimal(object instance, object Value)
+        {
+            var that = (global::Facts.Views.NumericTextBoxBehavior)instance;
+            that.AllowDecimal = (global::System.Boolean)Value;
+        }
+        private object get_12_NumericTextBoxBehavior_AssociatedObject(object instance)
+        {
+            var that = (global::Facts.Views.NumericTextBoxBehavior)instance;
+            return that.AssociatedObject;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -620,6 +663,19 @@ namespace Facts.Facts_XamlTypeInfo
                 xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "ViewModel", "Facts.ViewModels.MainPageViewModel");
                 xamlMember.Getter = get_10_MainPage_ViewModel;
                 xamlMember.Setter = set_10_MainPage_ViewModel;
+                break;
+            case "Facts.Views.NumericTextBoxBehavior.AllowDecimal":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Facts.Views.NumericTextBoxBehavior");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "AllowDecimal", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_NumericTextBoxBehavior_AllowDecimal;
+                xamlMember.Setter = set_11_NumericTextBoxBehavior_AllowDecimal;
+                break;
+            case "Facts.Views.NumericTextBoxBehavior.AssociatedObject":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Facts.Views.NumericTextBoxBehavior");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_12_NumericTextBoxBehavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;

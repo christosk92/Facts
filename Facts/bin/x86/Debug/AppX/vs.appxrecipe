@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-22T22:21:30.005</Modified>
+      <Modified>2017-01-22T22:44:17.515</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Facts.exe">
       <PackagePath>entrypoint\Facts.exe</PackagePath>
-      <Modified>2017-01-22T22:21:28.493</Modified>
+      <Modified>2017-01-22T22:44:15.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Caliburn.Micro\3.0.3\lib\uap10.0\Caliburn.Micro.Platform.Core.dll">
       <PackagePath>Caliburn.Micro.Platform.Core.dll</PackagePath>
@@ -522,7 +522,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\FactsAPI\bin\x86\Debug\FactsAPI.dll">
       <PackagePath>FactsAPI.dll</PackagePath>
-      <Modified>2017-01-22T22:20:51.453</Modified>
+      <Modified>2017-01-22T22:43:44.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -564,7 +564,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Facts.xr.xml">
       <PackagePath>Facts.xr.xml</PackagePath>
-      <Modified>2017-01-22T22:19:31.859</Modified>
+      <Modified>2017-01-22T22:40:20.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -609,11 +609,11 @@
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-22T22:19:33.342</Modified>
+      <Modified>2017-01-22T22:44:16.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Core\Facts.exe">
       <PackagePath>Facts.exe</PackagePath>
-      <Modified>2017-01-22T22:21:30.000</Modified>
+      <Modified>2017-01-22T22:44:17.511</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

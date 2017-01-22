@@ -174,5 +174,14 @@
       <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Facts.Views.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Facts.Views.NumericTextBoxBehavior">
+      <RootProperty Name="AllowDecimal" />
+    </RootType>
+    <RootType FullName="Facts.Views.mathFacct" />
   </Roots.RootTypes>
 </Roots>
