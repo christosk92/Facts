@@ -156,21 +156,47 @@ namespace Facts.Facts_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
-            _typeNameTable[0] = "Facts.Views.MainPage";
+            _typeNameTable = new string[19];
+            _typeNameTable[0] = "Facts.Views.datefact";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Facts.ViewModels.MainPageViewModel";
-            _typeNameTable[4] = "Caliburn.Micro.PropertyChangedBase";
+            _typeNameTable[3] = "Facts.Views.homePage";
+            _typeNameTable[4] = "Microsoft.Xaml.Interactivity.Interaction";
             _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[9] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[10] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[11] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[12] = "String";
+            _typeNameTable[13] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[14] = "System.Windows.Input.ICommand";
+            _typeNameTable[15] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[16] = "Facts.Views.MainPage";
+            _typeNameTable[17] = "Facts.ViewModels.MainPageViewModel";
+            _typeNameTable[18] = "Caliburn.Micro.PropertyChangedBase";
 
-            _typeTable = new global::System.Type[6];
-            _typeTable[0] = typeof(global::Facts.Views.MainPage);
+            _typeTable = new global::System.Type[19];
+            _typeTable[0] = typeof(global::Facts.Views.datefact);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Facts.ViewModels.MainPageViewModel);
-            _typeTable[4] = typeof(global::Caliburn.Micro.PropertyChangedBase);
+            _typeTable[3] = typeof(global::Facts.Views.homePage);
+            _typeTable[4] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
             _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[9] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[10] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[11] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[12] = typeof(global::System.String);
+            _typeTable[13] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[14] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[16] = typeof(global::Facts.Views.MainPage);
+            _typeTable[17] = typeof(global::Facts.ViewModels.MainPageViewModel);
+            _typeTable[18] = typeof(global::Caliburn.Micro.PropertyChangedBase);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -205,9 +231,27 @@ namespace Facts.Facts_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Facts.Views.MainPage(); }
-        private object Activate_3_MainPageViewModel() { return new global::Facts.ViewModels.MainPageViewModel(); }
-        private object Activate_4_PropertyChangedBase() { return new global::Caliburn.Micro.PropertyChangedBase(); }
+        private object Activate_0_datefact() { return new global::Facts.Views.datefact(); }
+        private object Activate_3_homePage() { return new global::Facts.Views.homePage(); }
+        private object Activate_6_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_9_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_11_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_13_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_16_MainPage() { return new global::Facts.Views.MainPage(); }
+        private object Activate_17_MainPageViewModel() { return new global::Facts.ViewModels.MainPageViewModel(); }
+        private object Activate_18_PropertyChangedBase() { return new global::Caliburn.Micro.PropertyChangedBase(); }
+        private void VectorAdd_6_BehaviorCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
+            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_11_ActionCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
+            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -219,10 +263,9 @@ namespace Facts.Facts_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Facts.Views.MainPage
+            case 0:   //  Facts.Views.datefact
                 userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
-                userType.AddMemberName("ViewModel");
+                userType.Activator = Activate_0_datefact;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -235,21 +278,105 @@ namespace Facts.Facts_XamlTypeInfo
                 xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Facts.ViewModels.MainPageViewModel
+            case 3:   //  Facts.Views.homePage
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_homePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Microsoft.Xaml.Interactivity.Interaction
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Behaviors");
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
+                xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_6_BehaviorCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  Windows.UI.Xaml.DependencyObjectCollection
+                xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
+                userType.Activator = Activate_9_EventTriggerBehavior;
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
+                userType.AddMemberName("Actions");
+                userType.AddMemberName("EventName");
+                userType.AddMemberName("SourceObject");
+                xamlType = userType;
+                break;
+
+            case 10:   //  Microsoft.Xaml.Interactivity.Behavior
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.AddMemberName("AssociatedObject");
+                xamlType = userType;
+                break;
+
+            case 11:   //  Microsoft.Xaml.Interactivity.ActionCollection
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_11_ActionCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  String
+                xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_13_InvokeCommandAction;
+                userType.AddMemberName("Command");
+                userType.AddMemberName("CommandParameter");
+                userType.AddMemberName("InputConverter");
+                userType.AddMemberName("InputConverterParameter");
+                userType.AddMemberName("InputConverterLanguage");
+                xamlType = userType;
+                break;
+
+            case 14:   //  System.Windows.Input.ICommand
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Windows.UI.Xaml.Data.IValueConverter
+                xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  Facts.Views.MainPage
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_16_MainPage;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  Facts.ViewModels.MainPageViewModel
                 userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Caliburn.Micro.PropertyChangedBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Caliburn.Micro.PropertyChangedBase
+            case 18:   //  Caliburn.Micro.PropertyChangedBase
                 userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_4_PropertyChangedBase;
+                userType.Activator = Activate_18_PropertyChangedBase;
                 xamlType = userType;
-                break;
-
-            case 5:   //  Object
-                xamlType = new global::Facts.Facts_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -265,6 +392,8 @@ namespace Facts.Facts_XamlTypeInfo
                     var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
                     provider = new global::Caliburn.Micro.XamlMetadataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::Template10.Template10__Library__XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     _otherProviders = otherProviders;
                 }
@@ -310,12 +439,100 @@ namespace Facts.Facts_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_MainPage_ViewModel(object instance)
+        private object get_0_Interaction_Behaviors(object instance)
+        {
+            return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_0_Interaction_Behaviors(object instance, object Value)
+        {
+            global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
+        }
+        private object get_1_EventTriggerBehavior_Actions(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.Actions;
+        }
+        private object get_2_EventTriggerBehavior_EventName(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.EventName;
+        }
+        private void set_2_EventTriggerBehavior_EventName(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.EventName = (global::System.String)Value;
+        }
+        private object get_3_EventTriggerBehavior_SourceObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.SourceObject;
+        }
+        private void set_3_EventTriggerBehavior_SourceObject(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.SourceObject = (global::System.Object)Value;
+        }
+        private object get_4_Behavior_AssociatedObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
+            return that.AssociatedObject;
+        }
+        private object get_5_InvokeCommandAction_Command(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.Command;
+        }
+        private void set_5_InvokeCommandAction_Command(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.Command = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_6_InvokeCommandAction_CommandParameter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.CommandParameter;
+        }
+        private void set_6_InvokeCommandAction_CommandParameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.CommandParameter = (global::System.Object)Value;
+        }
+        private object get_7_InvokeCommandAction_InputConverter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverter;
+        }
+        private void set_7_InvokeCommandAction_InputConverter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
+        }
+        private object get_8_InvokeCommandAction_InputConverterParameter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverterParameter;
+        }
+        private void set_8_InvokeCommandAction_InputConverterParameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverterParameter = (global::System.Object)Value;
+        }
+        private object get_9_InvokeCommandAction_InputConverterLanguage(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverterLanguage;
+        }
+        private void set_9_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverterLanguage = (global::System.String)Value;
+        }
+        private object get_10_MainPage_ViewModel(object instance)
         {
             var that = (global::Facts.Views.MainPage)instance;
             return that.ViewModel;
         }
-        private void set_0_MainPage_ViewModel(object instance, object Value)
+        private void set_10_MainPage_ViewModel(object instance, object Value)
         {
             var that = (global::Facts.Views.MainPage)instance;
             that.ViewModel = (global::Facts.ViewModels.MainPageViewModel)Value;
@@ -328,11 +545,81 @@ namespace Facts.Facts_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
+                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_0_Interaction_Behaviors;
+                xamlMember.Setter = set_0_Interaction_Behaviors;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_EventTriggerBehavior_Actions;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "EventName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_2_EventTriggerBehavior_EventName;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_3_EventTriggerBehavior_SourceObject;
+                break;
+            case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_4_Behavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_InvokeCommandAction_Command;
+                xamlMember.Setter = set_5_InvokeCommandAction_Command;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_6_InvokeCommandAction_CommandParameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_InvokeCommandAction_InputConverter;
+                xamlMember.Setter = set_7_InvokeCommandAction_InputConverter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Setter = set_8_InvokeCommandAction_InputConverterParameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
+                userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_9_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Setter = set_9_InvokeCommandAction_InputConverterLanguage;
+                break;
             case "Facts.Views.MainPage.ViewModel":
                 userType = (global::Facts.Facts_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Facts.Views.MainPage");
                 xamlMember = new global::Facts.Facts_XamlTypeInfo.XamlMember(this, "ViewModel", "Facts.ViewModels.MainPageViewModel");
-                xamlMember.Getter = get_0_MainPage_ViewModel;
-                xamlMember.Setter = set_0_MainPage_ViewModel;
+                xamlMember.Getter = get_10_MainPage_ViewModel;
+                xamlMember.Setter = set_10_MainPage_ViewModel;
                 break;
             }
             return xamlMember;

@@ -9,7 +9,7 @@ namespace FactsAPI
 {
     public static class GetFacts
     {
-        public static async Task<MonthFact> GetDateFact(string month,string day)
+        public static async Task<String> GetDateFact(string month,string day)
         {
            return await Helpers.WebHelper.GetJSONDate(month, day);
         }

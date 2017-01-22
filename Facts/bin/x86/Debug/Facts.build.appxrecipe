@@ -385,6 +385,9 @@
     <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library.dll">
+      <PackagePath>Template10Library.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\FactsAPI\bin\x86\Debug\FactsAPI.dll">
       <PackagePath>FactsAPI.dll</PackagePath>
     </AppxPackagedFile>
@@ -426,6 +429,30 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Caliburn.Micro\3.0.3\lib\uap10.0\Caliburn.Micro.Platform.UWP\Properties\Caliburn.Micro.Platform.UWP.rd.xml">
       <PackagePath>Caliburn.Micro.Platform.UWP\Properties\Caliburn.Micro.Platform.UWP.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Template10Library.xr.xml">
+      <PackagePath>Template10Library\Template10Library.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Controls\HamburgerMenu.xaml">
+      <PackagePath>Template10Library\Controls\HamburgerMenu.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Properties\Template10Library.rd.xml">
+      <PackagePath>Template10Library\Properties\Template10Library.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Themes\Generic.xaml">
+      <PackagePath>Template10Library\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Themes\HamburgerMenu.xaml">
+      <PackagePath>Template10Library\Themes\HamburgerMenu.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Themes\ModalDialog.xaml">
+      <PackagePath>Template10Library\Themes\ModalDialog.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Themes\PageHeader.xaml">
+      <PackagePath>Template10Library\Themes\PageHeader.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mypro\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Themes\Resizer.xaml">
+      <PackagePath>Template10Library\Themes\Resizer.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

@@ -223,3 +223,15 @@ C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Facts.csproj.GenerateResour
 C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Caliburn.Micro.Platform.UWP.pri.xml
 C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
+C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Template10Library.dll
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Template10Library.pri.xml
+C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Views\homePage.xbf
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\homePage.g.i.cs
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\homePage.g.cs
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\homePage.xaml
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\homePage.xbf
+C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Views\datefact.xbf
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\datefact.g.i.cs
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\datefact.g.cs
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\datefact.xaml
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\datefact.xbf

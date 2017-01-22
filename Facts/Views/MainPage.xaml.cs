@@ -27,7 +27,14 @@ namespace Facts.Views
         {
             this.InitializeComponent();
             this.ViewModel = new ViewModels.MainPageViewModel();
+            this.Loaded += MainPage_Loaded;
         }
+
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(typeof(homePage));
+        }
+
         public ViewModels.MainPageViewModel ViewModel { get; set; }
     }
 }

@@ -1,7 +1,8 @@
 ﻿{
   "dependencies": {
     "Caliburn.Micro": "3.0.3",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "Template10": "1.1.12"
   },
   "frameworks": {
     "uap10.0": {}

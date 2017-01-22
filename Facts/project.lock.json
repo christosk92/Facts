@@ -2070,6 +2070,19 @@
             "rid": "aot"
           }
         }
+      },
+      "Template10/1.1.12": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
@@ -4219,6 +4232,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Template10/1.1.12": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
         }
       }
     },
@@ -6409,6 +6435,19 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Template10/1.1.12": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x64": {
@@ -8567,6 +8606,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Template10/1.1.12": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
         }
       }
     },
@@ -10766,6 +10818,19 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Template10/1.1.12": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x86": {
@@ -12924,6 +12989,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Template10/1.1.12": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
         }
       }
     },
@@ -15122,6 +15200,19 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Template10/1.1.12": {
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
         }
       }
     }
@@ -21249,12 +21340,32 @@
         "ref/xamarinwatchos10/_._",
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
+    },
+    "Template10/1.1.12": {
+      "sha512": "FTvwISozoKs5syQkwaHl/s8iPts23Q+VFjTbnNnA+ad6MHqP5bOiq3ibjEXHGJkN5nSKY7FoMH4W1/aCS1n/ew==",
+      "type": "package",
+      "files": [
+        "Template10.1.1.12.nupkg.sha512",
+        "Template10.nuspec",
+        "build/uap10.0/Template10.targets",
+        "lib/uap10.0/Template10Library.dll",
+        "lib/uap10.0/Template10Library.pri",
+        "lib/uap10.0/Template10Library/Controls/HamburgerMenu.xaml",
+        "lib/uap10.0/Template10Library/Properties/Template10Library.rd.xml",
+        "lib/uap10.0/Template10Library/Template10Library.xr.xml",
+        "lib/uap10.0/Template10Library/Themes/Generic.xaml",
+        "lib/uap10.0/Template10Library/Themes/HamburgerMenu.xaml",
+        "lib/uap10.0/Template10Library/Themes/ModalDialog.xaml",
+        "lib/uap10.0/Template10Library/Themes/PageHeader.xaml",
+        "lib/uap10.0/Template10Library/Themes/Resizer.xaml"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Caliburn.Micro >= 3.0.3",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
+      "Template10 >= 1.1.12"
     ],
     "UAP,Version=v10.0": []
   }
