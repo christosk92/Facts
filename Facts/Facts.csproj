@@ -110,6 +110,9 @@
       <DependentUpon>mathFacct.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NumerixTextBoxBehavior.cs" />
+    <Compile Include="Views\triviafact.xaml.cs">
+      <DependentUpon>triviafact.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -145,6 +148,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\mathFacct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\triviafact.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

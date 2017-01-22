@@ -183,5 +183,6 @@
       <RootProperty Name="AllowDecimal" />
     </RootType>
     <RootType FullName="Facts.Views.mathFacct" />
+    <RootType FullName="Facts.Views.triviafact" />
   </Roots.RootTypes>
 </Roots>

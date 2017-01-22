@@ -42,5 +42,20 @@ namespace FactsAPI.Helpers
             Debug.WriteLine(resp);
             return school.text;
         }
+
+        public static async Task<String> GetTrivia(string number)
+        {
+            HttpClient httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Add(
+                "X-Mashape-Key", "zNB4dsQ6LcmshwwuqK0jT1oZKwzrp1zJH6jjsncb5MpKE0CHGW");
+
+
+            string loginUrl = "https://numbersapi.p.mashape.com/" + number + "/trivia?fragment=true&json=true";
+            HttpResponseMessage response = await httpClient.GetAsync(loginUrl);
+            string resp = await response.Content.ReadAsStringAsync();
+            var school = JsonConvert.DeserializeObject<MonthFact>(resp);
+            Debug.WriteLine(resp);
+            return school.text;
+        }
     }
 }

@@ -1,11 +1,11 @@
-﻿using Facts.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,26 +21,24 @@ namespace Facts.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class homePage : Page
+    public sealed partial class triviafact : Page
     {
-        public homePage()
+        public triviafact()
         {
             this.InitializeComponent();
         }
 
-        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(datefact));
-        }
-
-        private void Button_Tapped_1(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(mathFacct));
-        }
-
-        private void Button_Tapped_2(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(triviafact));
+            try
+            {
+                trivtxt.Text = await FactsAPI.GetFacts.GetTriviaFact(triv.Text);
+            }
+            catch(Exception e1)
+            {
+                MessageDialog error = new MessageDialog(e1.Message, "Something went wrong, try again");
+                await error.ShowAsync();
+            }
         }
     }
 }

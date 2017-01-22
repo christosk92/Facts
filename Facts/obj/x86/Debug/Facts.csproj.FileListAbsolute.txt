@@ -240,3 +240,8 @@ C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\mathFacct.g.i.cs
 C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\mathFacct.g.cs
 C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\mathFacct.xaml
 C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\mathFacct.xbf
+C:\Users\mypro\Desktop\git\Facts\Facts\bin\x86\Debug\Views\triviafact.xbf
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\triviafact.g.i.cs
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\triviafact.g.cs
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\triviafact.xaml
+C:\Users\mypro\Desktop\git\Facts\Facts\obj\x86\Debug\Views\triviafact.xbf

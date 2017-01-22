@@ -17,9 +17,9 @@ namespace FactsAPI
         {
             return await Helpers.WebHelper.GetJSONMath(number);
         }
-        public static async Task<MonthFact> GetTriviaFact()
+        public static async Task<String> GetTriviaFact(string number)
         {
-            return null;
+            return await Helpers.WebHelper.GetTrivia(number);
         }
         public static async Task<MonthFact> GetYearFact()
         {

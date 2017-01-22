@@ -156,7 +156,7 @@ namespace Facts.Facts_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[23];
             _typeNameTable[0] = "Facts.Views.datefact";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -179,8 +179,9 @@ namespace Facts.Facts_XamlTypeInfo
             _typeNameTable[19] = "Facts.Views.NumericTextBoxBehavior";
             _typeNameTable[20] = "Boolean";
             _typeNameTable[21] = "Facts.Views.mathFacct";
+            _typeNameTable[22] = "Facts.Views.triviafact";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[23];
             _typeTable[0] = typeof(global::Facts.Views.datefact);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -203,6 +204,7 @@ namespace Facts.Facts_XamlTypeInfo
             _typeTable[19] = typeof(global::Facts.Views.NumericTextBoxBehavior);
             _typeTable[20] = typeof(global::System.Boolean);
             _typeTable[21] = typeof(global::Facts.Views.mathFacct);
+            _typeTable[22] = typeof(global::Facts.Views.triviafact);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -248,6 +250,7 @@ namespace Facts.Facts_XamlTypeInfo
         private object Activate_18_PropertyChangedBase() { return new global::Caliburn.Micro.PropertyChangedBase(); }
         private object Activate_19_NumericTextBoxBehavior() { return new global::Facts.Views.NumericTextBoxBehavior(); }
         private object Activate_21_mathFacct() { return new global::Facts.Views.mathFacct(); }
+        private object Activate_22_triviafact() { return new global::Facts.Views.triviafact(); }
         private void VectorAdd_6_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
@@ -403,6 +406,13 @@ namespace Facts.Facts_XamlTypeInfo
             case 21:   //  Facts.Views.mathFacct
                 userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_21_mathFacct;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 22:   //  Facts.Views.triviafact
+                userType = new global::Facts.Facts_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_22_triviafact;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
